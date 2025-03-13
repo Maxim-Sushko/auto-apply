@@ -1,0 +1,162 @@
+[ {
+    "name": "QuikTrip",
+    "address": "8285 Reidville Rd, Greer, SC 29651",
+    "rating": 5,
+    "distance": 2557.2384152875075,
+    "placeId": "ChIJZZZV-ISHV4gR1W9E8QfRX2U",
+    "location": {
+      "lat": 34.8517436,
+      "lng": -82.1465846
+    },
+    "website": "https://locations.quiktrip.com/sc/greer/8285-reidville-rd?utm_source=gmb&utm_medium=yext&y_source=1_MTA5NDI4MTk3Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ==",
+    "phone": "(864) 655-6393",
+    "mapsUrl": "https://maps.google.com/?cid=7304786952661004245"
+  },
+  {
+    "name": "VIVA VILLA MEXICAN GRILL",
+    "address": "2245 SC-101, Duncan, SC 29334",
+    "rating": 4.3,
+    "price_level": 2,
+    "distance": 2670.468053345889,
+    "placeId": "ChIJqRMRzEqBV4gRb1mcccmyTQY",
+    "location": {
+      "lat": 34.8775258,
+      "lng": -82.1461838
+    },
+    "website": "http://www.vivavillamexicangrill.com/",
+    "phone": "(864) 479-0049",
+    "mapsUrl": "https://maps.google.com/?cid=454215715698530671"
+  },
+  {
+    "name": "Joe's Lake and Restaurant -THE HEART OF SUGAR - TeT, S.C.",
+    "address": "155 Lake Pl, Greer, SC 29651",
+    "rating": 4.6,
+    "price_level": 1,
+    "distance": 2934.1554348654668,
+    "placeId": "ChIJPdgGWcCGV4gR16f3LPyayrc",
+    "location": {
+      "lat": 34.8531921,
+      "lng": -82.15109570000001
+    },
+    "website": null,
+    "phone": "(864) 849-7740",
+    "mapsUrl": "https://maps.google.com/?cid=13243568062113228759"
+  },
+  {
+    "name": "Sheltons Smoking Butts BBQ",
+    "address": "155 Lake Pl, Greer, SC 29651",
+    "rating": 4.7,
+    "price_level": 1,
+    "distance": 2936.661684347102,
+    "placeId": "ChIJyfe8PDmHV4gR-by0od4pRPQ",
+    "location": {
+      "lat": 34.8531991,
+      "lng": -82.15112309999999
+    },
+    "website": null,
+    "phone": "(864) 849-7740",
+    "mapsUrl": "https://maps.google.com/?cid=17601239279843196153"
+  },
+  {
+    "name": "Duncan Street Tacos & Tamales",
+    "address": "999 Rogers Bridge Rd, Duncan, SC 29334",
+    "rating": 3.8,
+    "distance": 3447.4842167333454,
+    "placeId": "ChIJ1-a5IgCBV4gRBlCpD6_paNI",
+    "location": {
+      "lat": 34.8911067,
+      "lng": -82.14074
+    },
+    "website": null,
+    "phone": null,
+    "mapsUrl": "https://maps.google.com/?cid=15161625083634077702"
+  },
+  {
+    "name": "Zaxbys Chicken Fingers & Buffalo Wings",
+    "address": "1960 SC-101, Greer, SC 29651",
+    "rating": 3.4,
+    "distance": 3749.270735048186,
+    "placeId": "ChIJZZTmCZWBV4gRUc9bFctoyW4",
+    "location": {
+      "lat": 34.8850669,
+      "lng": -82.15262109999999
+    },
+    "website": "https://www.zaxbys.com/locations/sc/greer/1960-hwy-101",
+    "phone": "(864) 469-6421",
+    "mapsUrl": "https://maps.google.com/?cid=7983027035936902993"
+  },
+  {
+    "name": "Subway",
+    "address": "1951 SC-101, Greer, SC 29651",
+    "rating": 4,
+    "price_level": 1,
+    "distance": 3761.824559721291,
+    "placeId": "ChIJoTCJeDmBV4gRNwWqf6Zdeq8",
+    "location": {
+      "lat": 34.885778,
+      "lng": -82.1521602
+    },
+    "website": "https://restaurants.subway.com/united-states/sc/greer/1951-hwy-101?utm_source=yxt-goog&utm_medium=local&utm_term=acq&utm_content=24234&utm_campaign=evergreen-2020&y_source=1_MTQ5MDk5NjAtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "phone": "(864) 877-8737",
+    "mapsUrl": "https://maps.google.com/?cid=12644521873483892023"
+  },
+  {
+    "name": "Theo's Family Restaurant",
+    "address": "1941 SC-101, Greer, SC 29651",
+    "rating": 4.2,
+    "price_level": 1,
+    "distance": 3796.1378635898745,
+    "placeId": "ChIJr_sPkC0rWIgRgIyEwpGMcxs",
+    "location": {
+      "lat": 34.8860604,
+      "lng": -82.15232329999999
+    },
+    "website": "https://www.facebook.com/theosfamilyrestaurantsc/",
+    "phone": "(864) 848-1140",
+    "mapsUrl": "https://maps.google.com/?cid=1978079219007392896"
+  },
+  {
+    "name": "Kalahari Ocean Grill",
+    "address": "1925 SC-101, Greer, SC 29651",
+    "rating": 4.2,
+    "price_level": 2,
+    "distance": 3934.119313175867,
+    "placeId": "ChIJY3SbXjmBV4gRWMj5vTx0DkI",
+    "location": {
+      "lat": 34.8867911,
+      "lng": -82.15333629999999
+    },
+    "website": null,
+    "phone": "(864) 968-1426",
+    "mapsUrl": "https://maps.google.com/?cid=4759869660411316312"
+  },
+  {
+    "name": "Wendy's",
+    "address": "1874 SC-101, Greer, SC 29651",
+    "rating": 3.5,
+    "price_level": 1,
+    "distance": 4250.149289579048,
+    "placeId": "ChIJ5fBLXXiBV4gRuqWubTFLGTY",
+    "location": {
+      "lat": 34.8878946,
+      "lng": -82.15613859999999
+    },
+    "website": "https://www.wendys.com/en-uk/menu/our-menu",
+    "phone": "(864) 479-0065",
+    "mapsUrl": "https://maps.google.com/?cid=3898229628131517882"
+  },
+  {
+    "name": "Tacos el Rey",
+    "address": "1866 SC-101, Greer, SC 29651",
+    "rating": 4.5,
+    "distance": 4313.658195985805,
+    "placeId": "ChIJb5rKIViBV4gRsYhpjCG9N4Q",
+    "location": {
+      "lat": 34.8884706,
+      "lng": -82.1564023
+    },
+    "website": "https://www.facebook.com/tacoselreysc",
+    "phone": "(864) 580-8078",
+    "mapsUrl": "https://maps.google.com/?cid=12644521873483892023"
+    }
+]

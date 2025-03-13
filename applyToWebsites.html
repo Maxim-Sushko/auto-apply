@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants Websites</title>
+</head>
+<body>
+    <h1>Restaurants Websites</h1>
+    <ul id="websites-list"></ul>
+
+    <script>
+        function getCareerPage(){
+        fetch('resturants.json')
+            .then(response => response.json())
+            .then(data => {
+            const websitesList = document.getElementById('websites-list');
+            data.forEach(restaurant => {
+                if (restaurant.website) {
+                const listItem = document.createElement('li');
+                listItem.textContent = restaurant.website;
+                websitesList.appendChild(listItem);
+                }
+            });
+            })
+            .catch(error => console.error('Error fetching the JSON file:', error));
+        }
+        function loadCareerPage(URL){
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", URL, true);
+            xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4 && xhr.status == 200){
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(xhr.responseText, 'text/html');
+                const placeholders = doc.querySelectorAll('[placeholder="City"]');
+                placeholders.forEach(placeholder => {
+                placeholder.value = 'Duncan';
+                });
+                console.log(doc.documentElement.outerHTML);
+            }
+            }
+            xhr.send();
+        }
+        function main(){
+            //getCareerPage();
+        URL = "https://wendys-careers.co.uk/job-search/"
+        loadCareerPage(URL);
+
+        }
+        </script>
+</body>
+</html>

@@ -416,9 +416,9 @@
           distance: distance,
           placeId: place.place_id,
           location: place.geometry.location,
-          website: null,
-          phone: null,
-          mapsUrl: null
+            website: 'Loading...',
+            phone: place.formatted_phone_number || null,
+            mapsUrl: place.url || null
         };
       });
       
@@ -433,6 +433,8 @@
     }
     
     function fetchAllWebsites() {
+      let websitesList = [];
+      
       restaurantDetails.forEach((restaurant, index) => {
         // Request additional details to get website
         const detailsRequest = {
@@ -458,13 +460,33 @@
                   websiteCell.textContent = 'Not available';
                 }
               }
+              
+              // Add to websites list
+              if (restaurant.website) {
+                websitesList.push(`${restaurant.name}: ${restaurant.website}`);
+              }
+              
+              // Print all websites once all requests are done
+              if (index === restaurantDetails.length - 1) {
+                console.log(websitesList.join('\n'));
+                
+                // Output all restaurant details in JSON format
+                const bareBoneDetails = restaurantDetails.map(({ name, website, mapsUrl }) => ({ name, website, mapsUrl }));
+                const jsonContent = JSON.stringify(restaurantDetails, null, 2);
+                const blob = new Blob([jsonContent], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'restaurants.json';
+                a.click();
+                console.log(jsonContent);
+              }
             }
           });
         }, index * 200); // Stagger requests to avoid rate limiting
       });
     }
-    
-    function updateDisplayedResults() {
+function updateDisplayedResults() {
       const sortBy = document.getElementById('sort-by').value;
       const minRating = parseFloat(document.getElementById('min-rating').value);
       const resultsContainer = document.getElementById('results-container');
@@ -539,7 +561,8 @@
   </script>
   
   <!-- Load Google Maps JavaScript API -->
-  <script async src="https://maps.googleapis.com/maps/api/js?key=YOURAPIKEY&libraries=places&callback=initMap">
+  <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=YOURAPIKEY&libraries=places&callback=initMap"> -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASVbCgVTRVYu0yLLjRf39NS20wv8NGA8c&libraries=places&callback=initMap">
   </script>
 </body>
 </html>
